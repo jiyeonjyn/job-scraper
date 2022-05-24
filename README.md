@@ -3,6 +3,9 @@
 ## Set up a local development environmnet
 
 - Python 3.10.4
+- Flask : [https://flask.palletsprojects.com/en/2.1.x/](https://flask.palletsprojects.com/en/2.1.x/)
+- Requests : [https://requests.readthedocs.io/en/latest/](https://requests.readthedocs.io/en/latest/)
+- BeautifulSoup : [https://www.crummy.com/software/BeautifulSoup/bs4/doc/](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 ```bash
 $ pip3 install Flask requests bs4
