@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Scraper</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <i class="navbar-logo fa-solid fa-crow"></i>
+      <a class="navbar-title" href="/">Job Scraper</a>
+    </nav>
+    <form
+      class="search-form"
+      action="/report"
+      method="GET"
+      name="searchForm"
+      onsubmit="setLoading()"
+    >
+      <input
+        class="search-input"
+        type="text"
+        placeholder="Job keyword"
+        name="query"
+        required
+        autofocus
+      />
+      <button class="search-button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+    <div class="guide">
+      You can get job information from kr.indeed.com and saramin.co.kr 😄
+    </div>
+    <div class="loading">Loading...</div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

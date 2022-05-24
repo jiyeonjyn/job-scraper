@@ -1,32 +1,28 @@
 # job-scraper
 
-## Set up a local development environmnet
+## Demo
+
+<br>
+
+## Set up virtual environments
 
 - Python 3.10.4
 - Flask : [https://flask.palletsprojects.com/en/2.1.x/](https://flask.palletsprojects.com/en/2.1.x/)
 - Requests : [https://requests.readthedocs.io/en/latest/](https://requests.readthedocs.io/en/latest/)
-- BeautifulSoup : [https://www.crummy.com/software/BeautifulSoup/bs4/doc/](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-
-```bash
-$ pip3 install Flask requests bs4
-```
-
-<br>
-
-## 가상환경 만들기
-
-- [https://flask.palletsprojects.com/en/1.1.x/installation/#install-virtualenv](https://flask.palletsprojects.com/en/1.1.x/installation/#install-virtualenv)
+- BeautifulSoup4 : [https://www.crummy.com/software/BeautifulSoup/bs4/doc/](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 1. 가상환경 만들기
 2. 가상환경 활성화하기
-3. Flask 설치하기
+3. 모듈 설치하기
+
+- [https://flask.palletsprojects.com/en/1.1.x/installation/#install-virtualenv](https://flask.palletsprojects.com/en/1.1.x/installation/#install-virtualenv)
 
 ### Mac
 
 ```bash
 $ python3 -m venv venv
 $ . venv/bin/activate
-$ pip3 install Flask
+$ pip3 install Flask requests bs4
 ```
 
 ### Window
@@ -34,12 +30,12 @@ $ pip3 install Flask
 ```bash
 $ py -3 -m venv venv
 $ venv\Scripts\activate
-$ pip3 install Flask
+$ pip3 install Flask requests bs4
 ```
 
 <br>
 
-## 서버 실행하기
+## Run scripts
 
 ```bash
 $ python3 main.py
