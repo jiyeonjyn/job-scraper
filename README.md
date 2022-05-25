@@ -1,9 +1,5 @@
 # job-scraper
 
-## Demo
-
-<br>
-
 ## Set up virtual environments
 
 - Python 3.10.4

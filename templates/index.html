@@ -17,28 +17,31 @@
   </head>
   <body>
     <nav class="navbar">
-      <i class="navbar-logo fa-solid fa-crow"></i>
-      <a class="navbar-title" href="/">Job Scraper</a>
+      <a class="navbar-title" href="/"
+        ><i class="navbar-logo fa-solid fa-crow"></i>Job Scraper</a
+      >
     </nav>
-    <form
-      class="search-form"
-      action="/report"
-      method="GET"
-      name="searchForm"
-      onsubmit="setLoading()"
-    >
-      <input
-        class="search-input"
-        type="text"
-        placeholder="Job keyword"
-        name="query"
-        required
-        autofocus
-      />
-      <button class="search-button">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-    </form>
+    <div class="form-container">
+      <form
+        class="search-form"
+        action="/report"
+        method="GET"
+        name="searchForm"
+        onsubmit="setLoading()"
+      >
+        <input
+          class="search-input"
+          type="text"
+          placeholder="Job keyword"
+          name="query"
+          required
+          autofocus
+        />
+        <button class="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
     <div class="guide">
       You can get job information from kr.indeed.com and saramin.co.kr 😄
     </div>

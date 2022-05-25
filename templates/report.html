@@ -17,28 +17,36 @@
   </head>
   <body>
     <nav class="navbar">
-      <i class="navbar-logo fa-solid fa-crow"></i>
-      <a class="navbar-title" href="/">Job Scraper</a>
+      <a class="navbar-title" href="/"
+        ><i class="navbar-logo fa-solid fa-crow"></i>Job Scraper</a
+      >
     </nav>
-    <form
-      class="search-form"
-      action="/report"
-      method="GET"
-      name="searchForm"
-      onsubmit="setLoading()"
-    >
-      <input
-        class="search-input"
-        type="text"
-        placeholder="Job keyword"
-        name="query"
-        required
-        autofocus
-      />
-      <button class="search-button">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-    </form>
+    <div class="form-container">
+      <form
+        class="search-form"
+        action="/report"
+        method="GET"
+        name="searchForm"
+        onsubmit="setLoading()"
+      >
+        <input
+          class="search-input"
+          type="text"
+          placeholder="Job keyword"
+          name="query"
+          required
+          autofocus
+        />
+        <button class="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      {% if jobs %}
+      <a class="download" href="/export?query={{search_text}}"
+        ><i class="download-icon fa-solid fa-circle-down"></i>Export to CSV</a
+      >
+      {% endif %}
+    </div>
     <div class="guide">
       <span>
         Found {{result_num}} jobs for '<strong class="strong"
