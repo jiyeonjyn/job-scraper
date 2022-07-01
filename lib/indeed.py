@@ -20,8 +20,8 @@ def extract_job(html):
     else:
         company = ""
     location = html.find("div", {"class": "companyLocation"}).string
-    a_href = title_anchor["href"]
-    link = f"{BASE_URL}{a_href}"
+    jk = title_anchor["data-jk"]
+    link = f"{BASE_URL}/viewjob?jk={jk}"
     return {
         "title": title,
         "company": company,
